@@ -1,0 +1,12 @@
+# FreeCAD backup/autosave files
+*.FCStd1
+*.FCStd2
+*.FCBak
+*.FCStd#
+*.bak
+*.autosave
+# Temporary exports and caches
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
