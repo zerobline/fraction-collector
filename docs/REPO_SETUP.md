@@ -1,38 +1,41 @@
-# GitHub repository settings and publishing checklist
+# Repository settings and release checklist
 
-## Suggested repository metadata
+## Current publication status
+
+The following files are published in the public repository on `main`:
+
+- [Native FreeCAD model](../cad/FunnelStrip_Parametric.FCStd)
+- [Original PDF drawing](../cad/FunnelStrip_Drawing.pdf)
+- [STEP export](../cad/FunnelStrip_Final.step)
+- [STL export](../cad/FunnelStrip_Final.stl)
+- [PNG](FunnelStrip_Drawing.png) and [SVG](FunnelStrip_Drawing.svg) drawing previews
+
+The source, original PDF and exports have been uploaded; **no additional CAD upload is required** for repository browsing or downloads.
+
+## Suggested GitHub metadata
 
 - **Description:** Open-source FreeCAD 10-position test-tube funnel strip for sequential liquid fraction collection; compatible rack and tube part references.
-- **Website:** leave blank until you create a public build guide or hosted documentation.
+- **Website:** optional; leave blank unless hosted documentation is available.
 - **Topics:** `freecad`, `cad`, `open-hardware`, `fraction-collector`, `test-tubes`, `3d-printing`, `lab-equipment`, `parametric-design`, `sample-collection`.
 - **Visibility:** Public.
 - **Default branch:** `main`.
-- **Features:** Issues enabled; Wiki optional; Discussions optional.
-- **Licensing:** MIT for the project author's original files; supplier trademarks and externally linked pages remain third-party material.
+- **Features:** Issues enabled; Wiki/Discussions optional.
+- **License:** MIT (see [LICENSE](../LICENSE)); external supplier names and materials remain third-party content.
 
-GitHub app permissions used to add source documentation **do not expose repository settings mutations**. To set description/topics go to **Repository → About → gear**. For Issues go to **Settings → General → Features**.
+Repository description and topics may still need setting using **Repository → About → gear**. The connected GitHub file editor cannot change repository metadata.
 
-## Publishing the supplied source assets
+## Future versioned release
 
-The connected GitHub content writer supports UTF-8 text edits, but the native **.FCStd** and **.pdf** attachments require a binary file upload by the maintainer.
+A first numbered release is optional: visitors can already download the files from the `main` branch. Before publishing a `v1.0.0` release, check the following:
 
-1. Open [the repository](https://github.com/zerobline/fraction-collector).
-2. Use **Add file → Upload files** and place the two original files at:
-   - `cad/FunnelStrip_Parametric.FCStd`
-   - `cad/FunnelStrip_Drawing.pdf`
-3. Optional preview: `docs/FunnelStrip_Drawing.png` (from the original drawing).
-4. Commit to `main`; verify README links resolve.
-5. If distributing a release, create a **v1.0.0** GitHub Release after fit-checking, attach STEP/STL exports and a ZIP of native file and drawing, and document tested material/process.
+- [x] Native FreeCAD source and PDF uploaded
+- [x] STEP and STL exports uploaded
+- [x] PNG and SVG preview drawings uploaded
+- [ ] Open/recompute native file on the intended FreeCAD version
+- [ ] Verify measured pitch (nominal 27 mm) and tube-mouth sleeve clearance
+- [ ] Pass physical two-position fit check, then full ten-position check
+- [ ] Check flow through all ten passages and quantify retained liquid/carryover
+- [ ] State material, manufacturing process and fluid/temperature limitations
+- [ ] Export the release STEP/STL from the verified native model
 
-Until step 2 is complete, **CAD file links in the README intentionally point to reserved file paths** and are not downloadable from GitHub.
-
-## First release acceptance checklist
-
-- [ ] Native FreeCAD source present and opens/recomputes
-- [ ] Engineering drawing matches native document
-- [ ] 27 mm rack pitch verified physically (or tolerance note retained)
-- [ ] Sleeve measured in the actual glass tubes
-- [ ] Two-position fit check passed
-- [ ] All ten passages open
-- [ ] Material and fluid compatibility stated
-- [ ] Released binaries derived from the native model, not an independently generated illustration
+Use [Issues](https://github.com/zerobline/fraction-collector/issues) to report fit measurements or document a reproducible test. Keep the model and engineering drawing revision synchronized if geometry changes.

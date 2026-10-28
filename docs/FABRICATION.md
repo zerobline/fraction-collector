@@ -6,7 +6,7 @@
 2. In the model tree, open the spreadsheet labelled **Dimensions (mm) — edit column B** (object `Parameters`).
 3. Main values: `Count`, `Pitch`, `Length`, `Width`, `Thickness`, `Opening`, `ConeOD`, `ShoulderOD`, `Depth`, `SleeveOD`, `Insertion`, `Bore`, `RibThickness`, `RibDepth`, `CornerRadius`.
 4. Change one parameter at a time; **recompute**, verify feature status and inspect the section and repeated features.
-5. Choose the final body and export as **STEP** for CAD exchange or **STL** for 3D-print preparation. A STEP export is not a substitute for the parameter spreadsheet when changing geometry.
+5. Choose the final body and export as **STEP** for CAD exchange or **STL** for 3D-print preparation. The current [STEP](../cad/FunnelStrip_Final.step) and [STL](../cad/FunnelStrip_Final.stl) are already provided. Regenerate them from the native FreeCAD source if you change dimensions; STEP is not a substitute for the editable spreadsheet.
 
 ## Manufacturing options
 

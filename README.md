@@ -8,9 +8,22 @@ This is a **passive accessory**, not an automated fraction collector: a liquid s
 
 ## What it looks like
 
-The design has a continuous 280 × 29 mm upper strip, ten touching Ø27 mm funnel inlets, conical drain sections, and short sleeves that locate into test tubes. An underside view and cross-section are included in the dimensioned original drawing.
+The design has a continuous 280 × 29 mm upper strip, ten touching Ø27 mm funnel inlets, conical drain sections, and short sleeves that locate into test tubes. The original drawing shows the top view, a section through all ten funnels and an underside isometric view.
 
-**Source of truth:** the [native FreeCAD file](cad/FunnelStrip_Parametric.FCStd) and [FreeCAD TechDraw PDF](cad/FunnelStrip_Drawing.pdf). **The CAD files are awaiting upload to this repository**; see [CAD file instructions](cad/README.md). The complete CAD package is also available from the maintainer.
+![Dimensioned 10-position funnel strip drawing](docs/FunnelStrip_Drawing.png)
+
+[View the full-size drawing (PDF)](cad/FunnelStrip_Drawing.pdf) · [View the vector drawing (SVG)](docs/FunnelStrip_Drawing.svg)
+
+## Download the design
+
+| Format | File | Purpose |
+|---|---|---|
+| **Editable source** | [FreeCAD project (.FCStd)](cad/FunnelStrip_Parametric.FCStd) | Parametric model, editable dimensions and drawing |
+| CAD exchange | [STEP model (.step)](cad/FunnelStrip_Final.step) | Import into other CAD applications |
+| 3D printing | [STL mesh (.stl)](cad/FunnelStrip_Final.stl) | Import into a slicer; geometry is not parametric |
+| Engineering drawing | [PDF (.pdf)](cad/FunnelStrip_Drawing.pdf) | Dimensioned A3 general arrangement |
+
+**Source of truth:** the native FreeCAD file and its original engineering drawing. STEP and STL are exports, not substitutes for the editable source. See [CAD notes](cad/README.md).
 
 ## Quick parts list
 
@@ -47,7 +60,7 @@ The rack and tubes are **third-party products, purchased separately**, and their
 5. Export your preferred format (STEP for CAD exchange, STL for printing); test two adjacent positions before fabricating the full strip.
 6. Install only if sleeves freely enter the tubes and shoulder contact is stable. Collect samples by moving the rack/strip under a controlled stream. Verify actual collection performance before relying on sample separation.
 
-Detailed [fit checks](docs/DESIGN.md), [manufacturing guidance](docs/FABRICATION.md) and [assembly instructions](docs/PARTS.md).
+See the [fit and design notes](docs/DESIGN.md), [fabrication and assembly guide](docs/FABRICATION.md), and [parts and substitutes list](docs/PARTS.md).
 
 ## Limits and safety
 
@@ -59,12 +72,14 @@ Detailed [fit checks](docs/DESIGN.md), [manufacturing guidance](docs/FABRICATION
 ## Repository map
 
 ```text
-cad/                    Native FreeCAD design and its exported drawing (upload pending)
-docs/DESIGN.md          Design rationale, parameters, tolerances and known limitations
-docs/PARTS.md           Verified procurement references and alternatives
-docs/FABRICATION.md     Printing, verification and assembly notes
-docs/REPO_SETUP.md      GitHub metadata and release checklist
-CONTRIBUTING.md         How to report fit results and improve the design
+cad/                    Native FreeCAD model, original PDF drawing, STEP and STL exports
+docs/FunnelStrip_Drawing.png   Preview of the actual drawing
+docs/FunnelStrip_Drawing.svg   Vector drawing preview
+docs/DESIGN.md          Dimensions, provenance, limitations and fit checks
+docs/PARTS.md           Supplier references, parts and substitutes
+docs/FABRICATION.md     Editing, fabrication, assembly and verification
+docs/REPO_SETUP.md      Repository metadata and release checklist
+CONTRIBUTING.md         How to share measured fit results and improvements
 LICENSE                 MIT license
 ```
 

@@ -1,6 +1,6 @@
 # Design specification and provenance
 
-This is the **final user-created FreeCAD revision**, not an earlier generated concept or AI illustration. The authoritative native document is `FunnelStrip_Parametric.FCStd`, which includes a FreeCAD **Parameters** spreadsheet, Part Design features, repeated patterns, and a TechDraw page. Drawing reference **FS-001 | Rev B | 2026-10-27**.
+This is the **final user-created FreeCAD revision**, not an earlier generated concept or AI illustration. The authoritative native document is [`cad/FunnelStrip_Parametric.FCStd`](../cad/FunnelStrip_Parametric.FCStd), which includes a FreeCAD **Parameters** spreadsheet, Part Design features, repeated patterns, and a TechDraw page. Drawing reference **FS-001 | Rev B | 2026-10-27**.
 
 ## Key dimensions
 
